@@ -1,0 +1,84 @@
+@import "base";
+@import "layout";
+@import "typography";
+@import "compontents";
+
+
+
+.footer {
+
+    background-color: rgb(3, 10, 31);
+
+    &__content {
+
+        display: flex;
+        align-items: center;
+        padding: 6rem 4rem;
+
+    }
+
+
+    &__nav {
+        width: 30%;
+        margin-right: auto;
+        display: flex;
+    }
+
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+    
+
+
+    &__item {
+        color: #fff;
+        font-size: 1.4rem;
+        margin-bottom: 1.3rem;
+
+     
+
+    
+    }
+
+
+    &__text {
+        margin-right: auto;
+        color: #fff;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    &__icons {
+
+
+    }
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+        fill: #fff;
+        transition: all .5s;
+
+
+        &:not(:first-of-type) {
+
+            margin-left: 3rem;
+        }
+
+        &:hover {
+            fill: rgba(255, 0, 0, 0.616);
+            transform: translateY(-4px);
+        }
+    }
+}
